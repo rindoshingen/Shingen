@@ -1,0 +1,11 @@
+---
+layout: layout.html
+title: Bookshelf Page
+---
+
+<p>Content for my {{ title }}.</p>
+
+{% for book in collections.book %}
+  <h2 class="blog-title"><a href="{{ book.url }}">{{ book.data.title }}</a></h2>
+  {{ book.content }}
+{% endfor %}

@@ -1,0 +1,11 @@
+---
+layout: layout.html
+title: Digital Page
+---
+
+<p>Content for my {{ title }}.</p>
+
+{% for digital in collections.digital%}
+<h2 class="blog-title"><a href="{{ digital.url }}">{{ digital.data.title }}</a></h2>
+{{ digital.content }}
+{% endfor %}

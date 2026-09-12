@@ -1,0 +1,11 @@
+---
+layout: layout.html
+title: Notebook Page
+---
+
+<p>Content for my {{ title }}.</p>
+
+{% for note in collections.note %}
+    <h2 class="blog-title"><a href="{{ note.url }}">{{ note.data.title }}</a></h2>
+    {{ note.content }}
+{% endfor %}

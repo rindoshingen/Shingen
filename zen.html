@@ -1,0 +1,11 @@
+---
+layout: layout.html
+title: Zen Page
+---
+
+<p>Content for my {{ title }}.</p>
+
+{% for zen in collections.zen %}
+    <h2 class="blog-title"><a href="{{ zen.url }}">{{ zen.data.title }}</a></h2>
+    {{ zen.content }}
+{% endfor %}
