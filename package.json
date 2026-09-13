@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production eleventy --pathprefix 'shingen'"
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/shingen/"
   },
   "keywords": [],
   "type": "commonjs",
