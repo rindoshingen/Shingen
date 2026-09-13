@@ -11,11 +11,11 @@
     <h1>{{ title | default: "Shingen - 11ty Site" }}</h1>
     <nav>
         <ul>
-            <li><a href="/">Index</a></li>
-            <li><a href="/notes">Notebook</a></li>
-            <li><a href="/zen">Soto Zen</a></li>
-            <li><a href="/books">Bookshelf</a></li>
-            <li><a href="/digital">Digital</a></li>
+            <li><a href="{{ '/' | url }}">Index</a></li>
+            <li><a href="{{ '/notes' | url }}">Notebook</a></li>
+            <li><a href="{{ '/zen' | url }}">Soto Zen</a></li>
+            <li><a href="{{ '/books' | url }}">Bookshelf</a></li>
+            <li><a href="{{ '/digital' | url }}">Digital</a></li>
         </ul>
     </nav>
 </header>
